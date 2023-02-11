@@ -37,3 +37,5 @@ $ git push
 紧接着，将代码提交到我司代码仓库
 $ git push gttis
 
+克隆目录、下载
+git clone git@gitee.com:liu-yu-mitumao/ceshi.git
