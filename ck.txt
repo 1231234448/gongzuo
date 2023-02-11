@@ -39,3 +39,19 @@ $ git push gttis
 
 克隆目录、下载
 git clone git@gitee.com:liu-yu-mitumao/ceshi.git
+
+git push --set-upstream origin master的原因以及解决方法
+这是因为本地的分支没有和远程分支建立联系，需要执行以下代码就可以正常push了：
+git push --set-upstream origin master
+
+
+fatal: Could not read from remote repository.的解决办法
+查看远端地址 git remote –v 
+查看配置 git config --list
+
+git status
+
+git add .  // 暂存所有的更改
+git checkout . // 丢弃所有的更改
+git status // 查看文件状态
+git commit -m "本次要提交的概要信息" // 提交
