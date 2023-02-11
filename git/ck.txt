@@ -1,7 +1,16 @@
+新电脑
 git config --global user.name "刘宇"
 git config --global user.email "1243135004@qq.com"
 
-未有
+git add .  // 暂存所有的更改
+git checkout . // 丢弃所有的更改
+git status // 查看文件状态
+git commit -m "本次要提交的概要信息" // 提交
+
+克隆目录、下载
+git clone git@gitee.com:liu-yu-mitumao/ceshi.git
+
+没有线上仓库的情况
 mkdir ceshi
 cd ceshi
 git init 
@@ -11,47 +20,35 @@ git commit -m "first commit"
 git remote add origin git@gitee.com:liu-yu-mitumao/ceshi.git
 git push -u origin "master"
 
-已有
+已有线上仓库的情况
 cd existing_git_repo
 git remote add origin git@gitee.com:liu-yu-mitumao/ceshi.git
 git push -u origin "master"
 
-删除
-git remote remove origin
 
-多仓库
 当前仓库配置信息：
 $ git remote -v
-添加仓库 指定代码仓库的别名，此处我使用 gttis 作为我司代码仓库的别名
+
+删除仓库配置信息
+$git remote remove origin
+
+添加仓库 指定代码仓库的别名
 $ git remote add origin git@gitee.com:liu-yu-mitumao/ceshi.git
-添加完后查看仓库名称及地址
-$ git remote -v
-可以看到我司的代码仓库已经成功添加了，但是此时你是没办法签出新仓库的代码分支的，因为它的仓库信息还没有被拉取下来。
-所以我们需要通过fetch命令拉取新仓库的元数据信息（分支、标签等）
+
+fetch命令拉取新仓库的元数据信息（分支、标签等）
 $ git fetch gttis
+
 提交代码到本地缓冲区
 $ git commit -a -m 'for testing'
 
-首先，将代码推到原代码仓库（gitee.com）
+将代码推到仓库
 $ git push
-紧接着，将代码提交到我司代码仓库
-$ git push gttis
 
-克隆目录、下载
-git clone git@gitee.com:liu-yu-mitumao/ceshi.git
 
 git push --set-upstream origin master的原因以及解决方法
 这是因为本地的分支没有和远程分支建立联系，需要执行以下代码就可以正常push了：
 git push --set-upstream origin master
 
-
 fatal: Could not read from remote repository.的解决办法
 查看远端地址 git remote –v 
 查看配置 git config --list
-
-git status
-
-git add .  // 暂存所有的更改
-git checkout . // 丢弃所有的更改
-git status // 查看文件状态
-git commit -m "本次要提交的概要信息" // 提交
