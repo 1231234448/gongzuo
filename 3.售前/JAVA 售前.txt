@@ -44,9 +44,9 @@ src-右击-new-java class
 appearance 主题， font 字体
 
 public class Welcome{
-    public static void main(String[] args){
-        System.out.println("hello world！");
-    }
+	public static void main(String[] args){
+		System.out.println("hello world!");
+	}
 }
 
 
