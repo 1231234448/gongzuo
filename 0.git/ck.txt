@@ -7,7 +7,7 @@
     git status
     git commit -a -m '更新'
     git push github
-    git push origin
+    git push origin 
     
 克隆目录、下载
     git remote add origin git@gitee.com:liu-yu-mitumao/work.git
