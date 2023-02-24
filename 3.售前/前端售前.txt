@@ -1,0 +1,25 @@
+安装插件：
+中文语言插件
+open in browser 打开浏览器的方式，
+推荐插件：
+Code Spell Checker 单词拼写检查
+Error Lens 报错提示
+
+使用记事本编写代码
+<html>
+    <head>//头
+        <title>我的网页</title> //网页的名称 
+    </head>
+    <body>//身体
+        Hello，我的第一个网页 //内容
+    </body>
+</html>
+
+文件后缀名以.html结尾
+在编写代码的过程中，<>必须是英文状态下编写
+
+! 快捷创建
+html:5 
+
+csdn 论坛，微博
+gitee  
