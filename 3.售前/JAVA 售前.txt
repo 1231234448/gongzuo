@@ -49,6 +49,9 @@ public class Welcome{
 	}
 }
 
+jdk镜像：http://www.codebaoku.com/jdk/jdk-index.html
+	https://repo.huaweicloud.com/java/jdk/
+
 
 
 
